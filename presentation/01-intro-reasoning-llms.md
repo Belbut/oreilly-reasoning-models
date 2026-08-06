@@ -78,7 +78,7 @@ Reasoning tokens are **billed as output tokens** — on every major API.
 
 ![w:880](assets/leaderboard_intelligence.png)
 
-> Demand concentrates on a handful of top labs. *(Artificial Analysis, ~June 2026.)*
+> Demand concentrates on a handful of top labs. *(Artificial Analysis, ~Aug 2026, Intelligence Index v4.1.)*
 
 ---
 
@@ -110,10 +110,10 @@ It earns its extra tokens when the task is a **derivation**, not a lookup:
 
 ## Price is the other axis
 
-| Model (~June 2026) | $/M out | |
+| Model (~Aug 2026) | $/M out | |
 |---|---|---|
-| GPT-5.5 | ~$30 | frontier |
-| Claude Opus 4.8 | ~$25 | frontier |
+| GPT-5.6 | ~$30 | frontier |
+| Claude Opus 5 | ~$25 | frontier |
 | Gemini 3.1 Pro | ~$12 | |
 | **DeepSeek V4 Pro** | **~$0.87** | near-frontier, **~34× cheaper** |
 
@@ -175,8 +175,8 @@ It earns its extra tokens when the task is a **derivation**, not a lookup:
 
 ## The effort knobs
 
-- **OpenAI:** `reasoning.effort = none / low / medium / high / xhigh`
-- **Anthropic:** `thinking.budget_tokens = N` (or adaptive)
+- **OpenAI:** `reasoning.effort = none / low / medium / high / xhigh / max`
+- **Anthropic:** `output_config.effort = low / medium / high / xhigh / max` (current models) — `thinking.budget_tokens` still on Haiku 4.5
 - **Google:** thinking config on the Gemini models
 
 > Same model, dial the depth to the task.
