@@ -99,7 +99,7 @@ A model ~**1/7 the size** keeps most of the pass-rate.
 ## This is still how it's done
 
 The same recipe — **GRPO + RL from verifiable rewards** — is how 2026 frontier
-reasoning models (GPT-5.5, Claude Opus 4.8, Gemini 3.x) are trained.
+reasoning models (GPT-5.6, Claude Opus 5, Gemini 3.x) are trained.
 
 > Scaled up massively. **Not replaced.**
 
