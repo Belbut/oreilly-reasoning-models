@@ -40,6 +40,11 @@ consolidated into **three runnable, CPU-friendly notebooks**, each carrying one 
 - `07_picking_a_reasoning_model_for_an_application.ipynb` — a multi-provider model bake-off with an LLM judge
 - `08_reproducibility_cheap_vs_flagship.ipynb` — fix a seed and show a cheaper model (DeepSeek V4 Pro) can match a flagship at a fraction of the cost (runs in mock mode without API keys)
 
+Bonus / reference tier — provider-specific deep dives, standalone (not part of the pass-rate arc):
+
+- `anthropic-extended-thinking.ipynb` — hands-on with Claude extended thinking (`thinking.budget_tokens` and `output_config.effort`)
+- `openai-thinking-parameters.ipynb` — hands-on with OpenAI's `reasoning.effort` parameter across levels
+
 Shared machinery lives in `r1_toy.py`. The original five single-stage notebooks are preserved under
 `notebooks/archive/`.
 
@@ -54,12 +59,17 @@ Three decks (markdown source + PDF):
 ### Scripts (`scripts/`)
 
 - `app1_math_comparator/`, `app2_logic_solver/`, `app3_planning_agent/` — demo apps showcasing reasoning-model use cases
-- `reasoning_model_selector.py` — a runnable decision aid for *choosing* a current reasoning model (gpt-5.5, the o-series, Claude extended thinking, DeepSeek R1). Prints a comparison + recommends one from a task profile; `--weights` ranks the models by a score you control (reasoning/speed/cost); `--chart` saves the comparison image to `presentation/assets/` (alongside the deck images). Pairs with the deck-01 "When to reach for a reasoning model" flowchart.
+- `reasoning_model_selector.py` — a runnable decision aid for *choosing* a current reasoning model (gpt-5.6, the o-series, Claude extended thinking, DeepSeek R1). Prints a comparison + recommends one from a task profile; `--weights` ranks the models by a score you control (reasoning/speed/cost); `--chart` saves the comparison image to `presentation/assets/` (alongside the deck images). Pairs with the deck-01 "When to reach for a reasoning model" flowchart.
 
   ```bash
   python scripts/reasoning_model_selector.py                       # comparison + sample picks
   python scripts/reasoning_model_selector.py --weights 0.5,0.3,0.2 # weighted ranking: reasoning,speed,cost
   python scripts/reasoning_model_selector.py --chart               # also save the chart PNG
+  ```
+- `reasoning_explorer.py` — a local web app that shows OpenAI Responses-API reasoning summaries and Anthropic extended-thinking blocks side by side, so you can inspect intermediate reasoning traces from both providers on the same prompt.
+
+  ```bash
+  uv run scripts/reasoning_explorer.py   # open http://localhost:8765
   ```
 
 ## Getting Started

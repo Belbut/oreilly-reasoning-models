@@ -10,7 +10,7 @@ answers the next question — *which* current reasoning model, and why.
 
 It does three things:
   1. Prints a side-by-side comparison of the reasoning models this course
-     covers (OpenAI gpt-5.5, the o-series, Claude extended thinking, DeepSeek R1).
+     covers (OpenAI gpt-5.6, the o-series, Claude extended thinking, DeepSeek R1).
   2. Recommends one from a short task profile, with a transparent rule it
      prints alongside the pick — so students can see *and edit* the logic.
   3. Optionally ranks the models by a weighted score you control
@@ -57,14 +57,14 @@ class ReasoningModel:
 # Current reasoning models the course covers (2026-06).
 MODELS: list[ReasoningModel] = [
     ReasoningModel(
-        name="gpt-5.5",
+        name="gpt-5.6",
         provider="OpenAI",
         effort_control="reasoning.effort = none|low|medium|high|xhigh",
         reasoning=3, latency=2, cost=2, open_weights=False,
         best_for="balanced default — dial effort to fit the task",
     ),
     ReasoningModel(
-        name="o4-mini",
+        name="gpt-5.6-luna",
         provider="OpenAI",
         effort_control="reasoning.effort (compact)",
         reasoning=2, latency=1, cost=1, open_weights=False,
@@ -78,7 +78,7 @@ MODELS: list[ReasoningModel] = [
         best_for="hardest problems; runs tools mid-reasoning",
     ),
     ReasoningModel(
-        name="Claude Opus 4.7 (extended thinking)",
+        name="Claude Opus 5",
         provider="Anthropic",
         effort_control="thinking.budget_tokens = N",
         reasoning=3, latency=2, cost=3, open_weights=False,
@@ -112,7 +112,7 @@ def recommend(task: TaskProfile) -> tuple[str, str]:
     fits wins, so the most constraining requirements are checked first.
     """
     if not task.needs_deep_reasoning:
-        return ("Vanilla LLM — or gpt-5.5 at effort=none/low",
+        return ("Vanilla LLM — or gpt-5.6 at effort=none/low",
                 "single-step task: don't pay the reasoning tax (5-50x tokens)")
     if task.needs_open_weights:
         return ("DeepSeek R1",
@@ -121,12 +121,12 @@ def recommend(task: TaskProfile) -> tuple[str, str]:
         return ("OpenAI o3",
                 "needs tools running inside the reasoning loop")
     if task.cost_sensitive or task.latency_sensitive:
-        return ("OpenAI o4-mini — or gpt-5.5 at effort=low",
+        return ("OpenAI gpt-5.6-luna — or gpt-5.6 at effort=low",
                 "cost/latency-bound: cheapest fast step-by-step")
     if task.writing_heavy:
-        return ("Claude Opus 4.7 (extended thinking)",
+        return ("Claude Opus 5",
                 "long, self-checking output — budget thinking tokens")
-    return ("gpt-5.5 at effort=medium/high",
+    return ("gpt-5.6 at effort=medium/high",
             "deep reasoning, no special constraint: the balanced default")
 
 
