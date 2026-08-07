@@ -23,9 +23,10 @@ notebooks/      # Hands-on notebooks building the R1 training pipeline from scra
 presentation/   # Remark.js slide deck (presentation.html) + rendered PDF
 scripts/        # Demo apps showcasing reasoning-model use cases
 requirements/   # Python dependencies
+assets/         # Course handouts (quick-reference cheatsheet)
 ```
 
-> **Quick reference:** A one-page cheatsheet is available at [`oreilly-reasoning-models-cheatsheet.html`](oreilly-reasoning-models-cheatsheet.html) (or the print-ready [`.pdf`](oreilly-reasoning-models-cheatsheet.pdf)).
+> **Quick reference:** A one-page cheatsheet is available at [`assets/oreilly-reasoning-models-cheatsheet.html`](assets/oreilly-reasoning-models-cheatsheet.html) (or the print-ready [`.pdf`](assets/oreilly-reasoning-models-cheatsheet.pdf)).
 
 ### Notebooks (`notebooks/`)
 

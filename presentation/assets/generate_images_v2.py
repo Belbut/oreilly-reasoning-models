@@ -536,7 +536,7 @@ TIMELINE_EVENTS = [
     ("Jun 2026", "Claude\nFable 5",      "top score (60),\nthinking can't disable"),
     ("Jun 2026", "Claude\nSonnet 5",     "speed/intelligence\nbalance"),
     ("Jul 2026", "GPT-5.6 +\nClaude Opus 5", "current\nflagships"),
-    ("Jul 2026", "Kimi K3\n(open)",      "open-weight frontier,\n~1/2 Fable 5's cost"),
+    ("Jul 2026", "Kimi K3\n(open)",      "open-weight frontier,\n~1/3 Fable 5's cost"),
 ]
 
 # closing-the-gap series: (quarter, best proprietary, best open-weights)
