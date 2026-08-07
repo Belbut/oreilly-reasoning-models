@@ -10,10 +10,10 @@ notebooks/           # Jupyter notebooks — the R1-style pipeline, built from s
 ├── 01_foundations_reasoning_and_cot.ipynb                        # What a reasoning LLM is, CoT as test-time compute
 ├── 02_rl_core_coldstart_sft_and_grpo.ipynb                       # Cold-start SFT + GRPO from scratch
 ├── 03_amplify_and_compress_rejection_sft_and_distillation.ipynb  # Rejection-sampling SFT + distillation
-├── 07_picking_a_reasoning_model_for_an_application.ipynb         # Multi-provider model bake-off with an LLM judge
-├── 08_reproducibility_cheap_vs_flagship.ipynb                    # Cheap vs. flagship cost/reproducibility experiment
-├── anthropic-extended-thinking.ipynb                             # Reference: Claude extended thinking, hands-on
-└── openai-thinking-parameters.ipynb                              # Reference: OpenAI reasoning-effort parameters, hands-on
+├── 04_picking_a_reasoning_model_for_an_application.ipynb         # Multi-provider model bake-off with an LLM judge
+├── 05_reproducibility_cheap_vs_flagship.ipynb                    # Cheap vs. flagship cost/reproducibility experiment
+├── provider_anthropic_extended_thinking.ipynb                    # Provider deep-dive: Claude extended thinking, hands-on
+└── provider_openai_thinking_parameters.ipynb                     # Provider deep-dive: OpenAI reasoning-effort parameters, hands-on
 # Checkpoints (written by the notebooks, not committed): nb2_cold_start.pt, nb2_after_grpo.pt, nb3_after_reject_sft.pt
 # Original five single-stage notebooks preserved under notebooks/archive/
 

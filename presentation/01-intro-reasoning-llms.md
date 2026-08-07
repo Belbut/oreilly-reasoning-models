@@ -117,7 +117,7 @@ It earns its extra tokens when the task is a **derivation**, not a lookup:
 | Gemini 3.1 Pro | ~$12 | |
 | **DeepSeek V4 Pro** | **~$0.87** | near-frontier, **~34× cheaper** |
 
-> The expensive model isn't always the right call. *(Approx; we test this in notebook 08.)*
+> The expensive model isn't always the right call. *(Approx; we test this in notebook 05.)*
 
 ---
 
@@ -180,6 +180,7 @@ It earns its extra tokens when the task is a **derivation**, not a lookup:
 - **Google:** thinking config on the Gemini models
 
 > Same model, dial the depth to the task.
+> Hands-on: `notebooks/provider_openai_thinking_parameters.ipynb` · `notebooks/provider_anthropic_extended_thinking.ipynb`
 
 ---
 

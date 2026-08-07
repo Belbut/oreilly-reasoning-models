@@ -107,9 +107,9 @@ reasoning models (GPT-5.6, Claude Opus 5, Gemini 3.x) are trained.
 
 ## Bonus → picking & proving in practice
 
-- `notebooks/07_picking_a_reasoning_model_for_an_application.ipynb`
+- `notebooks/04_picking_a_reasoning_model_for_an_application.ipynb`
   a multi-provider bake-off with an LLM judge
-- `notebooks/08_reproducibility_cheap_vs_flagship.ipynb`
+- `notebooks/05_reproducibility_cheap_vs_flagship.ipynb`
   fix a **seed**, match a flagship with a **cheaper** model, count the cost
 
 > The training story, then the **engineering** story.
