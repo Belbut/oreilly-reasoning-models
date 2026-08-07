@@ -17,7 +17,7 @@ notebooks/           # Jupyter notebooks — the R1-style pipeline, built from s
 # Checkpoints (written by the notebooks, not committed): nb2_cold_start.pt, nb2_after_grpo.pt, nb3_after_reject_sft.pt
 # Original five single-stage notebooks preserved under notebooks/archive/
 
-presentation/        # Slide decks (markdown sources + rendered PDFs)
+presentation/        # Remark.js slide deck (presentation.html) + rendered PDF
 scripts/             # Demo apps (app1_math_comparator, app2_logic_solver, app3_planning_agent) + reasoning_model_selector.py + reasoning_explorer.py
 requirements/        # Dependencies
 ```

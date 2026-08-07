@@ -508,7 +508,7 @@ LEADERBOARD = [
     ("Claude Opus 5",          61.0, "p"),
     ("Claude Fable 5",         60.0, "p"),
     ("GPT-5.6 Sol (max)",      59.0, "p"),
-    ("Kimi K3",                57.0, "p"),
+    ("Kimi K3 (open)",         57.0, "o"),   # open-weight per research/fable5-kimik3-integration.md, corrects earlier "p" tag
     ("Claude Opus 4.8 (max)",  56.0, "p"),
     ("GPT-5.6 Terra (max)",    55.0, "p"),
     ("Grok 4.5",               54.0, "p"),
@@ -530,11 +530,13 @@ TIMELINE_EVENTS = [
     ("Aug 2025", "OpenAI\nGPT-5",        "unified router\n(fast + think)"),
     ("Nov 2025", "Gemini 3 Pro\n+ Opus 4.5", "frontier multimodal\nreasoning"),
     ("Apr 2026", "OpenAI\nGPT-5.5",      "briefly tops the\nAA index (xhigh)"),
-    ("Apr 2026", "DeepSeek\nV4 Pro",     "near-frontier,\n~1/34th the cost"),
+    ("Apr 2026", "DeepSeek\nV4 Pro",     "capable open-weights,\n~1/34th the cost"),
     ("May 2026", "Claude\nOpus 4.8",     "AA leader at the\ntime (61.4)"),
     ("Jun 2026", "GLM-5.2\n(open)",      "top open-weights\nmodel (51)"),
-    ("Jul 2026", "OpenAI\nGPT-5.6",      "Sol/Terra/Luna\ntiers"),
-    ("Jul 2026", "Claude\nOpus 5",       "current Anthropic\nflagship"),
+    ("Jun 2026", "Claude\nFable 5",      "top score (60),\nthinking can't disable"),
+    ("Jun 2026", "Claude\nSonnet 5",     "speed/intelligence\nbalance"),
+    ("Jul 2026", "GPT-5.6 +\nClaude Opus 5", "current\nflagships"),
+    ("Jul 2026", "Kimi K3\n(open)",      "open-weight frontier,\n~1/2 Fable 5's cost"),
 ]
 
 # closing-the-gap series: (quarter, best proprietary, best open-weights)

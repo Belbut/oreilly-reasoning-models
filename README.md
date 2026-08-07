@@ -20,7 +20,7 @@ This course explores how modern reasoning models (OpenAI o-series, DeepSeek R1, 
 
 ```
 notebooks/      # Hands-on notebooks building the R1 training pipeline from scratch
-presentation/   # Slide decks (markdown sources + rendered PDFs)
+presentation/   # Remark.js slide deck (presentation.html) + rendered PDF
 scripts/        # Demo apps showcasing reasoning-model use cases
 requirements/   # Python dependencies
 ```
@@ -50,11 +50,13 @@ Shared machinery lives in `r1_toy.py`. The original five single-stage notebooks 
 
 ### Presentation (`presentation/`)
 
-Three decks (markdown source + PDF):
+A single Remark.js deck (`presentation.html`, exported to `presentation.pdf`), covering all three modules:
 
-- `01-intro-reasoning-llms` — intro to reasoning LLMs and the landscape
-- `02-deepseek-r1-paper-walkthrough` — guided walkthrough of the DeepSeek R1 paper
-- `03-r1-recipe-five-stages` — the five-stage R1 recipe mapped onto the three technical notebooks
+- **Intro to Reasoning LLMs** — what they are, why now
+- **The DeepSeek R1 Paper** — reading the recipe
+- **The R1 Recipe in Code** — the five-stage recipe mapped onto the three technical notebooks
+
+Open `presentation.html` directly in a browser to present.
 
 ### Scripts (`scripts/`)
 
